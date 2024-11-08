@@ -1,0 +1,3 @@
+[submodule "semares_preprocessing"]
+	path = semares_preprocessing
+	url = https://github.com/mfricke-genevention/semares_preprocessing.git
