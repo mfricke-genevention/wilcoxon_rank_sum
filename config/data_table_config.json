@@ -1,0 +1,38 @@
+{
+    "output": {
+        "file_name": "data.csv",
+        "sep": ",",
+        "quotechar": "",
+        "path": "./transformed_input/"
+    },
+    "input": {
+        "sep": ",",
+        "quotechar": ""
+    },
+    "join": {
+        "columns": [
+            "gene",
+            "protein"
+        ],
+        "name": "ID"
+    },
+    "name_mapping": true,
+    "columns": [
+        {
+            "maps": [
+                {
+                    "name": "map_1",
+                    "object_type": "sample",
+                    "field": [
+                        "name"
+                    ]
+                }
+            ],
+            "name": "{map_1}",
+            "input": [
+                "abundance",
+                "expression"
+            ]
+        }
+    ]
+}

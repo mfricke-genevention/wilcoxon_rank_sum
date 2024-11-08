@@ -1,0 +1,34 @@
+pipelines:
+- pipelineName: wilcoxon test (example)
+  pipelineDescription: "This is an example to demonstrate how a workflow for semares could look like. The workflow performs a wilcoxon test, using data, metadata and user input for the condition."
+  pipelineCommand: nextflow run
+  pipelineVersion: "1.0"
+
+  pipelineParams:
+  - paramName: Output Folder Path
+    paramKey: --output
+    paramDescription: Output folder path to store the result
+    paramType: OutputPath
+    isMultiValue: false
+    isRequired: true
+
+  - paramName: Count Files
+    paramDescription: List of count files
+    paramKey: --count_files
+    paramType: InputPath
+    isMultiValue: true
+    isRequired: true
+
+  - paramName: Metadata JSON File Path
+    paramDescription: file path for the meta data json file
+    paramKey: --meta_file
+    paramType: InputPath
+    isMultiValue: false
+    isRequired: true
+
+  - paramName: Condition
+    paramDescription: Choose a condition for the wilcoxon test.
+    paramKey: --condition
+    paramType: Text
+    isMultiValue: false
+    isRequired: true

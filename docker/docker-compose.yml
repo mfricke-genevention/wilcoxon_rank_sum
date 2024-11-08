@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+
+  analyses :
+    image: "dockergenevention/analyses"
+    build:
+      context: ./
+      platforms: 
+        - linux/amd64 
+        - linux/arm64

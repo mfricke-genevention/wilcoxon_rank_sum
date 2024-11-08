@@ -1,0 +1,52 @@
+{
+    "file_name": "metadata.csv",
+    "sep": ",",
+    "quotechar": "",
+    "output": "./transformed_input/",
+    "columns": [
+        {
+            "field": [
+                "name"
+            ],
+            "object_type": "sample",
+            "header_name": "sample"
+        },    
+        {
+            "field": [
+                "identifier"
+            ],
+            "object_type": "individual",
+            "header_name": "individual"
+        },
+        {
+            "field": [
+                "timepoints",
+                "$TIMEPOINT",
+                "timepoint_termId"
+            ],
+            "object_type": "individual",
+            "header_name": "timepoint"
+        },
+        {
+            "field": [
+                "sex"
+            ],
+            "object_type": "individual",
+            "header_name": "sex"
+        },
+        {
+            "field": [
+                "diabetes-grade"
+            ],
+            "object_type": "individual",
+            "header_name": "diabetes-grade"
+        },
+        {
+            "field": [
+                "condition"
+            ],
+            "object_type": "sample",
+            "header_name": "condition"
+        }
+    ]
+}
