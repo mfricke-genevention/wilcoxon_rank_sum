@@ -1,6 +1,7 @@
 pipelines:
 - pipelineName: wilcoxon test (example)
   pipelineDescription: "This is an example to demonstrate how a workflow for semares could look like. The workflow performs a wilcoxon test, using data, metadata and user input for the condition."
+  pipelinePath: "$PIPELINE_PATH/main.nf"
   pipelineCommand: nextflow run
   pipelineVersion: "1.0"
 
