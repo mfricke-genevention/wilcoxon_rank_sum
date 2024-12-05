@@ -42,8 +42,9 @@ The workflow parameter from at the frontend is based on the pipeline configurati
 Find a valid example here: [semares.yml](./semares.yml). You need to take care that the `semares.yml` follows the `yaml` syntax. This file will be the basis for the workflow registration at the frontend. 
 
 ## Register the workflow
-Go to `Workflows->Workflows->New Workflow`\
-Select adapter from above (Default Adapter)
+Go to `Workflows->Workflows->New Workflow`
+
+Select Adapter `Default Adapter` -> select pipeline `wilcoxon test (example)`.
 
 ![workflow properties](./images/workflow_properties.png)
 Based on the select `Workflow execution` level and `Connected experiment types` the workflow will be shown to the user.
@@ -63,4 +64,3 @@ If you wan't to visualize a file at the frontend. You need to specify a parser. 
 
 #### Resulting form for the user
 ![workflow properties](./images/workflow_form.png)
-The resulting form, based on the parameter specification.
