@@ -41,6 +41,8 @@ The workflow parameter from at the frontend is based on the pipeline configurati
 
 Find a valid example here: [semares.yml](./semares.yml). You need to take care that the `semares.yml` follows the `yaml` syntax. This file will be the basis for the workflow registration at the frontend. 
 
+> Every pipeline needs to have exactly one `OutputPath` parameter. All files which should be stored in semares needs to be copied to this location by the pipeline. After successful execution, semares will move this files to the persistent data folder.
+
 ## Register the workflow
 Go to `Workflows->Workflows->New Workflow`
 
